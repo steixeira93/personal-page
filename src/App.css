@@ -1,38 +1,149 @@
-.App {
+/* Reset de estilo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #212121;
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo do Sobre */
+#about {
+  background-color: #f7f7f7;
+  padding: 3rem 0;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Estilo dos Projetos */
+#projects {
+  background-color: #fff;
+  padding: 3rem 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.projects-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.project p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.project a {
+  background-color: #212121;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.project a:hover {
+  background-color: #444;
+}
+
+/* Estilo do Contato */
+#contact {
+  background-color: #f7f7f7;
+  padding: 3rem 0;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  list-style: none;
 }
