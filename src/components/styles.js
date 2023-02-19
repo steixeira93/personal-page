@@ -47,7 +47,7 @@ export const HeaderButton = styled.button`
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.2s;
-  margin-right: 10px
+  margin-right: 35px;
 
   &:hover {
     background-color: #005b8a;

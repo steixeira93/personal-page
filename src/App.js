@@ -5,8 +5,6 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-import styles from './components/styles'
-
 function App() {
   return (
     <div className="App">
