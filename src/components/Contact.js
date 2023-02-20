@@ -4,7 +4,7 @@ import { ContactContainer, ContactTitle, ContactLink } from './styles';
 
 const Contact = () => {
   return (
-    <ContactContainer>
+    <ContactContainer id="contact">
       <ContactTitle>Contact Me</ContactTitle>
       <ContactLink href="mailto:seuemail@mail.com">
         <FaEnvelope />

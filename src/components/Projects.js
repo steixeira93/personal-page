@@ -37,7 +37,7 @@ const Projects = () => {
   ];
 
   return (
-    <ProjectsContainer>
+    <ProjectsContainer id="projects">
       <ProjectsTitle>Projetos</ProjectsTitle>
       <ProjectsGrid>
         {projects.map((project) => (
